@@ -17,6 +17,7 @@ const C = {
   muted: "#64748b",
   subtle: "#94a3b8",
 };
+console.log("API URL:", process.env.REACT_APP_API_URL);
 
 // ── API helper ───────────────────────────────────────────────────────────────
 async function api(path, opts = {}) {
