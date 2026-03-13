@@ -21,7 +21,7 @@ const C = {
 // ── API helper ───────────────────────────────────────────────────────────────
 async function api(path, opts = {}) {
   const token = localStorage.getItem("token");
-  const res = await fetch(`http://localhost:4000${path}`, {
+  const res = await fetch(`${process.env.REACT_APP_API_URL}${path}`, {
     headers: {
       "Content-Type": "application/json",
       ...(token ? { Authorization: `Bearer ${token}` } : {}),
