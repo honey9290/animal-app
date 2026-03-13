@@ -11,7 +11,6 @@
     "start": "react-scripts start",
     "build": "node node_modules/react-scripts/bin/react-scripts.js build"
   },
-  "proxy": "http://localhost:4000",
   "browserslist": {
     "production": [
       ">0.2%",
